@@ -7,7 +7,7 @@
     <link href="styles.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="bg-slate-50">
     <!-- flex-col (verticle) flex-col-reverse (verticle reverse) flex-row (horizontal) flex-row-reverse (horizontal reverse) -->
     <!-- <div class="flex flex-row-reverse bg-yellow-500 w-auto">
         <div class="bg-red-500 text-white w-10 h-10"> 1 </div>
@@ -32,7 +32,7 @@
     </div> -->
 
     <!-- Grid and Grid columns -->
-    <div class="bg-slate-200 grid md:grid-cols-3 sm:grid-cols-2 gap-2">
+    <!-- <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-2">
 
         <div class="bg-green-500 h-20 sm:col-span-1 md:col-span-2">1</div>
         <div class="bg-green-500 h-20">2</div>
@@ -44,6 +44,18 @@
         <div class="bg-green-500 h-20">8</div>
         <div class="bg-green-500 h-20">9</div>
 
+    </div> -->
+
+    <!-- gap-x-size gap-y-size etc (gap-y-2), justify-items-center, justify-items-start, 
+        justify-items-end, justify-self-start, justify-self-end, 
+        justify-self-stretch (if no width specify) -->
+    <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-x-2 gap-y-2">
+        <div class="w-40 bg-green-500 h-20 justify-self-start">1</div>
+        <div class="w-40 bg-green-500 h-20">2</div>
+        <div class="w-40 bg-green-500 h-20">3</div>
+        <div class=" bg-green-500 h-20  justify-self-stretch">4</div>
+        <div class="w-40 bg-green-500 h-20">5</div>
+        <div class="w-40 bg-green-500 h-20">6</div>
     </div>
 
 
